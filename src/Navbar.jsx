@@ -1,10 +1,12 @@
 import React from 'react';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
-function Navbar({productCount}) {
+
+function Navbar({ productCount }) {
 	return (
 		<div className="py-4 bg-white">
-      
+
 			<div className="max-w-6xl flex justify-between mx-auto items-center">
 				<div className="flex ">
 					<div className="text-3xl font-semibold">
@@ -16,12 +18,16 @@ function Navbar({productCount}) {
 					/>
 				</div>
 
-        <div className="flex flex-col items-center">
-			< HiOutlineShoppingBag  className="text-5xl text-primary-default"/>
-        <span className="-m-7">{productCount}</span>
-          </div>
+				<div className="flex flex-col items-center">
+					<Link to="cartpage">
+						< HiOutlineShoppingBag className="text-5xl text-primary-default" />
+						<span className="-m-7">{productCount}</span>
+					</Link>
+				</div>
+
 			</div>
-		</div>
+		</div >
+
 	);
 }
 

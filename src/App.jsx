@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import ProductDetails from './ProductDetails';
 import Footer from './Footer';
 import NotFound from './NotFound';
+import CartPage from './CartPage';
 
 function App() {
 	const savedDataString = localStorage.getItem('my-cart') || '{}'
@@ -30,12 +31,14 @@ function App() {
 
 			<div className="grow">
 				<Routes>
+					<Route path="/cartpage/" element={<CartPage/> }/>
 					<Route path="/" element={<ProductListPage />} />
 					<Route
 						path="/product/:id"
 						element={<ProductDetails onAddToCart={handleAddToCart} />}
 					/>
 					<Route path="*" element={<NotFound />} />
+				
 				</Routes>
 			</div>
 
