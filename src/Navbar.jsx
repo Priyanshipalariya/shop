@@ -18,13 +18,12 @@ function Navbar({ productCount }) {
 					/>
 				</div>
 
+	<Link to="cartpage">
 				<div className="flex flex-col items-center">
-					<Link to="cartpage">
 						< HiOutlineShoppingBag className="text-5xl text-primary-default" />
 						<span className="-m-7">{productCount}</span>
-					</Link>
 				</div>
-
+				</Link>
 			</div>
 		</div >
 

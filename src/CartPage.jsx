@@ -1,13 +1,19 @@
 import React from "react";
-import CartRow from "./CartRow";
+import CartList from "./CartList";
+import {
+  HiArrowNarrowLeft} from 'react-icons/hi';
+  import { Link } from 'react-router-dom';
+
 
 const CartPage = () => {
   return (
-   
-    <div className="text-3xl flex flex-col justify-center items-center bg-rose-300 h-screen">
-        CART PAGE
-        <CartRow/>
-    </div>
+    <div>
+       <Link to="/">
+        <HiArrowNarrowLeft className="text-3xl mb-2 mx-36 mt-3" />
+      </Link>
+
+        <CartList/>
+        </div>
   );
 };
 

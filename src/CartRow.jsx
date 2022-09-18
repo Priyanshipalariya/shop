@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import {AiOutlineCloseCircle} from "react-icons/ai";
-const CartRow = () => {
+
+const CartRow = (data) => {
+  const [inputValue, setInputValue] = useState(1)
   return (
-    <div className="flex px-3">
-        <button>
+    <div className="flex items-center justify-between border border-gray-400 p-5 max-w-6xl mx-auto m-2 border bg-white">
+        <button className="text-2xl">
         <AiOutlineCloseCircle/>
         </button>
-<div className="w-12">
-        <img src="https://www.google.com/search?q=iphone+14&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjM1L-Zp5z6AhVIRmwGHbwDCRUQ_AUoA3oECAIQBQ#imgrc=w9AQoOvebc9UYM"/>
+<div className="w-16 h-16">
+        <img className="h-full w-full object-cover" src={data.image}/>
         </div>
-        <h1>Iphone 14</h1>
-        <h1>$1000</h1>
-        <input className="w-4" type="number" min="1"/>
-        <h1>$1000</h1>
+        <h1 className="text-xl text-primary-default pr-12">{data.title}</h1>
+        <h1>${data.price}</h1>
+        <input className="w-8 border border-black" type="number" value={data.quantity} min="1"/>
+        <h1>${data.total}</h1>
       
     </div>
   );

@@ -18,7 +18,7 @@ function Product({ thumbnail, category, title, price, id, rating }) {
 
 			<div className="font-bold text-sm ">${price}</div>
 
-			<Link to={'/product/' + id} >
+			<Link to={'/product/' + id} className="bg-primary-default px-2 rounded-md" >
 				View Details
 			</Link>
 		</div>
