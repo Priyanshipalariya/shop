@@ -49,7 +49,7 @@ function ProductDetails({ onAddToCart }) {
   }
 
   return (
-    <div className="mx-36 my-10">
+    <div className=" mx-36 my-28">
       <Link to="/">
         <HiArrowNarrowLeft className="text-3xl mb-2" />
       </Link>
@@ -80,7 +80,7 @@ function ProductDetails({ onAddToCart }) {
         </div>
       </div>
 
-      <div className="flex justify-between text-3xl mt-2">
+      <div className="flex justify-between text-3xl mt-2 ">
         <div>
           {id > 1 && (
             <Link to={"/product/" + (id - 1)}>
