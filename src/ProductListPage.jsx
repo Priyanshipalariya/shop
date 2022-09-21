@@ -53,9 +53,11 @@ function ProductListPage() {
   return (
 
     <div className=" max-w-6xl mx-auto px-9 py-12.5 bg-white my-16">
+     
+     <div className="flex justify-between">
       <input
         className="border rounded-md border-black bg-stone-50 text-gray-500"
-        placeholder="Search"
+        placeholder="Search here"
         onChange={handleQueryChange}
       />
 
@@ -69,7 +71,7 @@ function ProductListPage() {
         <option value="price.l">Sort by Price:low to high</option>
         <option value="price.h">Sort by Price:high to low</option>
       </select>
-
+      </div>
 
       {data.length > 0 && <ProductList products={data} />}
       {data.length == 0 && <Unavailable />}

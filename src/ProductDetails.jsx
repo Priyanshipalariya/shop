@@ -49,12 +49,14 @@ function ProductDetails({ onAddToCart }) {
   }
 
   return (
-    <div className=" mx-36 my-28">
+    <div className="max-w-6xl mx-auto">
       <Link to="/">
         <HiArrowNarrowLeft className="text-3xl mb-2" />
       </Link>
-      <div className="flex pr-16 py-12 max-w-6xl mx-auto">
-        <img className=" w-100 h-80" src={productDetail.thumbnail} />
+
+      
+      <div className="flex pr-16 py-12 bg-white pl-5 mx-auto">
+        <img className=" w-80 h-80" src={productDetail.thumbnail} />
 
         <div className="flex flex-col mx-10">
           <h3 className="text-sm">{productDetail.category}</h3>
