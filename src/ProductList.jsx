@@ -4,7 +4,7 @@ import Product from "./Product";
 
 function ProductList({ products }) {
   return (
-    <div className="md:grid grid-cols-3 gap-2 rounded-md space-y-3 md:space-y-0">
+    <div className="md:grid md:grid-cols-3 gap-2 rounded-md space-y-3 md:space-y-0">
       {products.map(function(item) {
         return (
           <Product

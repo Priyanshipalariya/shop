@@ -56,7 +56,7 @@ function ProductDetails({ onAddToCart }) {
 
       
       <div className="flex flex-col md:flex-row px-12 py-8 bg-white justify-center items-center md:justify-start mx-auto">
-        <img className=" w-100 h-80" src={productDetail.thumbnail} />
+        <img className=" w-80 h-80" src={productDetail.thumbnail} />
 
 
 <div className="flex flex-col ">
