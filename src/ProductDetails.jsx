@@ -55,32 +55,39 @@ function ProductDetails({ onAddToCart }) {
       </Link>
 
       
-      <div className="flex pr-16 py-12 bg-white pl-5 mx-auto">
+      <div className="flex flex-col md:flex-row px-12 py-8 bg-white justify-center items-center  mx-auto">
         <img className=" w-80 h-80" src={productDetail.thumbnail} />
 
-        <div className="flex flex-col mx-10">
-          <h3 className="text-sm">{productDetail.category}</h3>
-          <h3 className="text-md pt-3 ">{productDetail.brand}</h3>
 
-          <h1 className="text-4xl mb-5">{productDetail.title}</h1>
+<div className="flex flex-col ">
+        <div className="flex flex-col mx-8 md:mx-10 border-b-2 border-gray-300 pb-4">
+          <h3 className="text-md pt-3 text-gray-500 ">{productDetail.brand}</h3>
 
-          <h3 className="text-3xl mb-5 font-medium">
+          <h1 className="text-2xl mb-2 font-semibold">{productDetail.title}</h1>
+
+          <h3 className="text-xl mb-3 font-bold">
             ${productDetail.price}
           </h3>
 
-          <p className="mb-10"> {productDetail.description}</p>
+          <p className="mb-4 text-sm text-gray-800"> {productDetail.description}</p>
 
-          <div>
+          <div className="flex">
               <input value={count} min="1" onChange={handleCountChange}
-                className=" border rounded-md px-2 py-2 w-12"
+                className=" border rounded-md  w-12 border-solid border-gray-300"
                 type="number"/>
            
-            <button onClick={handleButtonClick} className=" ml-4 py-2 px-5 rounded-md bg-primary-light">
+            <button onClick={handleButtonClick} className=" ml-4 py-1 px-12 rounded-md bg-primary-default">
               Add to Cart
 						</button>
           </div>
+          </div>
+          <h3 className="text-sm pb-4 mx-8 md:mx-10">Category : <span className="text-primary-default">{productDetail.category}</span></h3>
+         
         </div>
+       
       </div>
+
+
 
       <div className="flex justify-between text-3xl mt-2 ">
         <div>
