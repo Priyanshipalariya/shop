@@ -4,7 +4,7 @@ import Product from "./Product";
 
 function ProductList({ products }) {
   return (
-    <div className=" flex flex-wrap gap-2 rounded-md space-y-3 md:space-y-0">
+    <div className=" flex flex-wrap justify-center">
       {products.map(function(item) {
         return (
           <Product

@@ -26,7 +26,7 @@ function App() {
 
 
 	return (
-		<div className="bg-gray-200 h-screen overflow-scroll flex flex-col">
+		<div className="bg-gray-200 ">
 			<Navbar productCount={totalCount} />
 
 			<div className="grow">
