@@ -17,13 +17,15 @@ function Navbar({ productCount }) {
 						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmW87xS4z9Kfyj28FBfvCL5CPg66b09WwykQ&usqp=CAU"
 					/>
 				</div>
-
+<div className="flex gap-2 items-center">
+	<Link to="loginpage" className="text-primary-dark text-md">Account</Link>
 	<Link to="cartpage">
-				<div className="flex flex-col items-center">
+				<div className="flex flex-col items-center pb-4">
 						< HiOutlineShoppingBag className="text-5xl text-primary-default" />
 						<span className="-m-7">{productCount}</span>
 				</div>
 				</Link>
+				</div>
 			</div>
 		</div >
 
