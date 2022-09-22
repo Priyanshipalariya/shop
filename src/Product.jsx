@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Product({ thumbnail, category, title, price, id, rating }) {
 	return (
-		<div className="max-w-sm mx-auto border-b-4 p-4">
+		<div className="max-w-xs mx-auto border-b-4 p-4">
 			<div className="w-full aspect-square">
 				<img
 					className="w-full h-full object-cover rounded-md"
