@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 function Product({ thumbnail, category, title, price, id, rating }) {
 	return (
-		<div className="border-b-4 p-4">
-			<div>
+		<div className="max-w-xs border-b-4 p-4">
+			<div className="w-full aspect-square">
 				<img
-					className="w-48 h-48 object-cover"
+					className="w-full h-full object-cover rounded-md"
 					src={thumbnail}
 				/>
 			</div>
