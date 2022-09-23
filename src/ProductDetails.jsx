@@ -55,7 +55,7 @@ function ProductDetails({ onAddToCart }) {
       </Link>
 
       
-      <div className="flex flex-col lg:flex-row px-12 py-8 bg-white justify-center items-center lg:justify-start mx-auto">
+      <div className="flex flex-col md:flex-row px-12 py-8 bg-white justify-center items-center md:justify-start mx-auto">
         <img className=" w-80 h-80" src={productDetail.thumbnail} />
 
 
@@ -81,7 +81,7 @@ function ProductDetails({ onAddToCart }) {
 						</button>
           </div>
           </div>
-          <h3 className="text-sm pb-4 mx-8 lg:mx-10">Category : <span className="text-primary-default">{productDetail.category}</span></h3>
+          <h3 className="text-sm pb-4 mx-8 md:mx-10">Category : <span className="text-primary-default">{productDetail.category}</span></h3>
          
         </div>
        
