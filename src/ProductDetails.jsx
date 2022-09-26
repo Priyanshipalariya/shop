@@ -76,7 +76,7 @@ function ProductDetails({ onAddToCart }) {
                 className=" border rounded-md  w-12 border-solid border-gray-300"
                 type="number"/>
            
-            <button onClick={handleButtonClick} className=" ml-4 py-1 px-12 rounded-md bg-primary-default">
+            <button onClick={handleButtonClick} className=" ml-4 py-1 px-8 rounded-md bg-primary-default">
               Add to Cart
 						</button>
           </div>
@@ -90,14 +90,14 @@ function ProductDetails({ onAddToCart }) {
 
 
       <div className="flex justify-between text-3xl mt-2 ">
-        <div>
+        <div className='text-lg md:text-xl lg:text-2xl'>
           {id > 1 && (
             <Link to={"/product/" + (id - 1)}>
               <HiChevronLeft />Previous
 						</Link>
           )}
         </div>
-        <div>
+        <div className='text-lg md:text-xl lg:text-2xl'>
           <Link to={"/product/" + (id + 1)}>
             <HiChevronRight />Next
 					</Link>

@@ -54,9 +54,9 @@ function ProductListPage() {
 
     <div className=" max-w-6xl mx-auto px-9 py-12.5 bg-white my-16">
      
-     <div className="flex justify-between">
+     <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row  md:justify-between">
       <input
-        className="border rounded-md border-black bg-stone-50 text-gray-500"
+        className="border rounded-md border-black bg-stone-50 text-gray-500 "
         placeholder="Search here"
         onChange={handleQueryChange}
       />
@@ -64,7 +64,7 @@ function ProductListPage() {
       <select
         onChange={handleSortChange}
         value={sort}
-        className="border rounded-md border-black bg-stone-50 text-gray-500 "
+        className="border rounded-md border-black bg-stone-50 text-gray-500  "
       >
         <option value="default">Default Sorting</option>
         <option value="title">Sort by Title</option>
