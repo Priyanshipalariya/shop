@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { VscAccount } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
 
 
@@ -18,7 +19,7 @@ function Navbar({ productCount }) {
 					/>
 				</div>
 <div className="flex gap-2 items-center">
-	<Link to="loginpage" className="text-primary-dark text-md">Account</Link>
+	<Link to="loginpage" ><VscAccount className="text-primary-dark text-xl"/></Link>
 	<Link to="cartpage">
 				<div className="flex flex-col items-center pb-4">
 						< HiOutlineShoppingBag className="text-5xl text-primary-default" />
